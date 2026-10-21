@@ -1,0 +1,16 @@
+{
+    "name": "aula/poo",
+    "description": "Lista de exercícios de composição",
+    "authors": [
+        {
+            "name": "Mrhaty888",
+            "email": "marcaoeele@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
