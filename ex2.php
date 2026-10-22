@@ -7,6 +7,31 @@ use App\Time;
 
 $time = new Time("Agua Santa");
 
+#Erros de validação: 
+try {
+    $time = new Time("");
+} catch (\InvalidArgumentException $e ) {
+    echo "Erro: ".$e->getMessage().PHP_EOL;
+}
+
+try {
+    $jogador1 = new Jogadores("",18,"Atacante");
+} catch (\InvalidArgumentException $e ) {
+    echo "Erro: ".$e->getMessage().PHP_EOL;
+}
+
+try {
+    $jogador1 = new Jogadores("Reinaldo",-1,"Atacante");
+} catch (\InvalidArgumentException $e ) {
+    echo "Erro: ".$e->getMessage().PHP_EOL;
+}
+
+try {
+    $jogador1 = new Jogadores("Reinaldo",18,"");
+} catch (\InvalidArgumentException $e ) {
+    echo "Erro: ".$e->getMessage().PHP_EOL;
+}
+
 $jogador1 = new Jogadores("Reinaldo",18,"Atacante");
 $jogador2 = new Jogadores("Ronaldo",18,"Atacante");
 $jogador3 = new Jogadores("Francisco",20,"Centro-avante");
