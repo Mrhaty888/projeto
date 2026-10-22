@@ -7,7 +7,24 @@ use App\Questionarios;
 
 
 $questionario = new Questionarios("Conhecimentos Gerais");
+#Erros de validação:
+try {
+$questionario = new Questionarios("");
+} catch (\InvalidArgumentException $e ) {
+    echo "Erro: ".$e->getMessage().PHP_EOL;
+}
 
+
+try {
+$pergunta1 = new Perguntas("Qual a capital do Brasil?", "");
+} catch (\InvalidArgumentException $e ) {
+    echo "Erro: ".$e->getMessage().PHP_EOL;
+}
+try {
+$pergunta1 = new Perguntas("", "Brasilia");
+} catch (\InvalidArgumentException $e ) {
+    echo "Erro: ".$e->getMessage().PHP_EOL;
+}
 $pergunta1 = new Perguntas("Qual a capital do Brasil?", "Brasilia");
 $pergunta2 = new Perguntas("Quanto é 2 + 2?", "4");
 $pergunta3 = new Perguntas("Qual a cor do cavalo branco de Napoleao?", "Branco");
