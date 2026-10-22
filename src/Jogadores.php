@@ -16,7 +16,7 @@ class Jogadores{
         if (trim($posicao)=="") {
             throw new InvalidArgumentException("Posição inválida");
         }
-        if ($camisa <= 0) {
+        if ($camisa < 0) {
             throw new InvalidArgumentException('Camisa inválida.');
         }
     }
