@@ -6,5 +6,19 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Biblioteca' => $baseDir . '/src/Biblioteca.php',
+    'App\\Carrinho' => $baseDir . '/src/Carrinho.php',
+    'App\\Estacionamento' => $baseDir . '/src/Estacionamento.php',
+    'App\\Estudante' => $baseDir . '/src/Estudante.php',
+    'App\\Jogadores' => $baseDir . '/src/Jogadores.php',
+    'App\\Livro' => $baseDir . '/src/Livro.php',
+    'App\\Missao' => $baseDir . '/src/Missao.php',
+    'App\\Perguntas' => $baseDir . '/src/Perguntas.php',
+    'App\\Produtos' => $baseDir . '/src/Produtos.php',
+    'App\\Questionarios' => $baseDir . '/src/Questionarios.php',
+    'App\\RPG' => $baseDir . '/src/RPG.php',
+    'App\\Time' => $baseDir . '/src/Time.php',
+    'App\\Turma' => $baseDir . '/src/Turma.php',
+    'App\\Veiculo' => $baseDir . '/src/Veiculo.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );

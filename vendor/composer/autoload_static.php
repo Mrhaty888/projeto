@@ -21,6 +21,20 @@ class ComposerStaticInitfc24203dce25a6e96bfa000f85242d87
     );
 
     public static $classMap = array (
+        'App\\Biblioteca' => __DIR__ . '/../..' . '/src/Biblioteca.php',
+        'App\\Carrinho' => __DIR__ . '/../..' . '/src/Carrinho.php',
+        'App\\Estacionamento' => __DIR__ . '/../..' . '/src/Estacionamento.php',
+        'App\\Estudante' => __DIR__ . '/../..' . '/src/Estudante.php',
+        'App\\Jogadores' => __DIR__ . '/../..' . '/src/Jogadores.php',
+        'App\\Livro' => __DIR__ . '/../..' . '/src/Livro.php',
+        'App\\Missao' => __DIR__ . '/../..' . '/src/Missao.php',
+        'App\\Perguntas' => __DIR__ . '/../..' . '/src/Perguntas.php',
+        'App\\Produtos' => __DIR__ . '/../..' . '/src/Produtos.php',
+        'App\\Questionarios' => __DIR__ . '/../..' . '/src/Questionarios.php',
+        'App\\RPG' => __DIR__ . '/../..' . '/src/RPG.php',
+        'App\\Time' => __DIR__ . '/../..' . '/src/Time.php',
+        'App\\Turma' => __DIR__ . '/../..' . '/src/Turma.php',
+        'App\\Veiculo' => __DIR__ . '/../..' . '/src/Veiculo.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
