@@ -42,7 +42,7 @@ $e2 = new Estudante("Maria Oliveira", "2345678", 5.5);
 $e3 = new Estudante("Pedro Santos", "3456789", 7.0);
 $e4 = new Estudante("Lucas Lima", "4567890", 9.0);
 
-$mediaVazia = $turma->calcularMediaGeral();
+$turma->calcularMediaGeral();
 
 $turma->cadastrarEstudante($e1);
 $turma->cadastrarEstudante($e2);
