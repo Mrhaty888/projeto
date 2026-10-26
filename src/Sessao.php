@@ -34,7 +34,7 @@ class Sessao{
         }
         }
         $this->ingressos[] = $ingressoNovo;
-        $this->total += $ingresso->getPagamento();
+        $this->total += $ingressoNovo->getPagamento();
         echo "Ingresso vendido. ".PHP_EOL;
         return True;
     }
@@ -42,7 +42,7 @@ class Sessao{
     public function poltronasOcupadas(): void{
         echo "Poltronas ocupadas: ".PHP_EOL;
         foreach ($this->ingressos as $ingresso) {
-            echo "| Poltrona {$ingresso->getPoltrona} |".PHP_EOL;
+            echo "| Poltrona {$ingresso->getPoltrona()} |".PHP_EOL;
         }
     }
 

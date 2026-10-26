@@ -18,19 +18,19 @@ $sessaoInvalida = new Sessao("Batman: a Corte das corujas",-1);
 }
 
 try {
-$ingresso1 = new Ingresso("",35.57,2);
+$ingresso1 = new Ingresso("",2,35.57);
 } catch (\InvalidArgumentException $e ) {
     echo "Erro: ".$e->getMessage().PHP_EOL;
 }
 
 try {
-$ingresso1 = new Ingresso("Ronaldo",-35.57,3);
+$ingresso1 = new Ingresso("Ronaldo",-2,35.57);
 } catch (\InvalidArgumentException $e ) {
     echo "Erro: ".$e->getMessage().PHP_EOL;
 }
 
 try {
-$ingresso1 = new Ingresso("Ronaldo",35.57,-1);
+$ingresso1 = new Ingresso("Ronaldo",2,-35.57);
 } catch (\InvalidArgumentException $e ) {
     echo "Erro: ".$e->getMessage().PHP_EOL;
 }

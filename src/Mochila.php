@@ -57,6 +57,7 @@ class Mochila {
         }
 
     public function espacoRestante(): float{
+        echo "Espaço restante: ";
         return round($this->capacidade - $this->total,2);
     }
 
