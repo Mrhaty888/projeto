@@ -21,8 +21,13 @@ class Sessao{
     }
 
     public function venderIngresso(Ingresso $ingressoNovo): bool{
-        if ($this->capacidade < count($this->ingressos)) {
+        if ($this->capacidade <= count($this->ingressos)) {
             echo "Nenhuma poltrona disponível.".PHP_EOL;
+            return False;
+        }
+
+        if($ingressoNovo->getPoltrona() > $this->capacidade) {
+            echo "Poltrona indisponível.".PHP_EOL;
             return False;
         }
         if (count($this->ingressos)>0) {
