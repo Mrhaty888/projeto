@@ -23,7 +23,7 @@ class Atividade{
     public function getTitulo(): string{
         return $this->titulo;
     }
-    public function getPlaca(): float{
+    public function getValorMaximo(): float{
         return $this->valorMaximo;
     }
     public function getNota(): float{
@@ -38,7 +38,7 @@ class Atividade{
             echo "Nota registrada. ".PHP_EOL;
         }
     }
-    
+
 
 }
 ?>
