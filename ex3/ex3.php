@@ -7,6 +7,24 @@ require_once __DIR__ . '/Carrinho.php';
 use App\Produtos;
 use App\Carrinho;
 
+try {
+    $produtoInvalido = new Produtos("", 10.0, "1234567");
+} catch (InvalidArgumentException $e) {
+    echo "Erro na criacao do produto: " . $e->getMessage() . PHP_EOL;
+}
+
+try {
+    $produtoInvalido = new Produtos("A", -10.0, "1234567");
+} catch (InvalidArgumentException $e) {
+    echo "Erro na criacao do produto: " . $e->getMessage() . PHP_EOL;
+}
+
+try {
+    $produtoInvalido = new Produtos("A", 10.0, "123456A");
+} catch (InvalidArgumentException $e) {
+    echo "Erro na criacao do produto: " . $e->getMessage() . PHP_EOL;
+}
+
 $carrinho = new Carrinho();
 
 $produto1 = new Produtos("Mouse Red-Dragon",130.50,"123456");

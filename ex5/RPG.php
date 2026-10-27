@@ -42,7 +42,7 @@ class RPG{
     }
 
     public function listarMissoes(): void{
-        echo "--LISTA DE MISSÕES--".PHP_EOL;
+        echo "Missões: ".PHP_EOL;
         foreach($this->missoes as $missaolistada) {
             echo "{$missaolistada->getNome()} | Descrição: {$missaolistada->getDescricao()} | Moedas: {$missaolistada->getMoedas()} | Estado: {$missaolistada->getSituacao()}".PHP_EOL;
         }

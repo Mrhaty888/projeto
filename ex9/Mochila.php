@@ -62,7 +62,7 @@ class Mochila {
     }
 
     public function listarEquipamentos(): void{
-        echo "--LISTA DE ITENS--".PHP_EOL;
+        echo "Itens:".PHP_EOL;
         foreach($this->equipamentos as $equipamento) {
             echo "{$equipamento->getNome()} | Peso: {$equipamento->getPeso()} | Moedas: {$equipamento->getMoedas()}}".PHP_EOL;
         }

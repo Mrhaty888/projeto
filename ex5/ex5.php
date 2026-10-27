@@ -5,6 +5,24 @@ require_once __DIR__ . '/RPG.php';
 use App\Missao;
 use App\RPG;
 
+try {
+    $missaoInvalida = new Missao("", "Descricao", 50);
+} catch (InvalidArgumentException $e) {
+    echo "Erro na criacao da missao: " . $e->getMessage() . PHP_EOL;
+}
+
+try {
+    $missaoInvalida = new Missao("Missao", "", 50);
+} catch (InvalidArgumentException $e) {
+    echo "Erro na criacao da missao: " . $e->getMessage() . PHP_EOL;
+}
+
+try {
+    $missaoInvalida = new Missao("Missao", "Descricao", -50);
+} catch (InvalidArgumentException $e) {
+    echo "Erro na criacao da missao: " . $e->getMessage() . PHP_EOL;
+}
+
 $rpg = new RPG();
 
 $missao1 = new Missao("Matar o Dragão", "Derrote o dragão na caverna norte", 500);
