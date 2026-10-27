@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . "/vendor/autoload.php";
+require_once __DIR__ . '/Atividade.php';
+require_once __DIR__ . '/Acompanhamento.php';
+require_once __DIR__ . '/Aluno.php';
 
 use App\Atividade;
 use App\Acompanhamento;

@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/Perguntas.php';
+require_once __DIR__ . '/Questionarios.php';
+
 
 use App\Perguntas;
 use App\Questionarios;

@@ -39,9 +39,10 @@ class Time{
                 echo "{$jogador->getNome()} | Camisa $numeroCamisa --- Posição: {$jogador->getPosicao()} ".PHP_EOL;
                 return True;
             }
+        }
         echo "Jogador não encontrado.".PHP_EOL;
         return False;
-        }
+        
     }
 
     public function listarJogadores(): void{

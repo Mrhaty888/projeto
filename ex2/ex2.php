@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . "/vendor/autoload.php";
+require_once __DIR__ . '/Jogadores.php';
+require_once __DIR__ . '/Time.php';
+
 
 use App\Jogadores;
 use App\Time;

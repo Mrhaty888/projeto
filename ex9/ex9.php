@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ ."/vendor/autoload.php";
+require_once __DIR__ . '/Equipamento.php';
+require_once __DIR__ . '/Mochila.php';
+require_once __DIR__ . '/Aventureiro.php';
 
 use App\Equipamento;
 use App\Mochila;

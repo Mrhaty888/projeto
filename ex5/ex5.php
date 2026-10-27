@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . "/vendor/autoload.php";
+require_once __DIR__ . '/Missao.php';
+require_once __DIR__ . '/RPG.php';
 
 use App\Missao;
 use App\RPG;
